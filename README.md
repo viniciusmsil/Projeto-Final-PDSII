@@ -24,7 +24,7 @@ O objetivo deste trabalho é implementar três jogos de tabuleiro: **Reversi**, 
 ```plaintext
 projeto-final-pdsii-2024-2/
 ├── README.md        # Documentação do projeto
-├── LICENSE          # Licença do projeto (se aplicável)
+├── LICENSE          # Licença do projeto 
 ├── .gitignore       # Arquivos e pastas a serem ignorados pelo Git
 ├── src/             # Código-fonte (arquivos .cpp e .hpp)
 │   ├── games/       # Implementação dos jogos

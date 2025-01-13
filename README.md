@@ -5,7 +5,7 @@ Este é o repositório do projeto final da disciplina **Programação e Desenvol
 ---
 
 ## 📋 Objetivo
-O objetivo deste trabalho é implementar três jogos de tabuleiro: **Reversi**, **Lig 4** e **Jogo da Velha**, utilizando o paradigma de **orientação a objetos (POO)** e boas práticas de desenvolvimento. O sistema também contará com:
+O objetivo deste trabalho é implementar três jogos de tabuleiro: **Othelo**, **Lig 4** e **Jogo da Velha**, utilizando o paradigma de **orientação a objetos (POO)** e boas práticas de desenvolvimento. O sistema também contará com:
 - Módulo para cadastro de jogadores e estatísticas.
 - Execução de partidas entre jogadores.
 - Possibilidade de adicionar funcionalidades extras, como **IA** ou interface gráfica.

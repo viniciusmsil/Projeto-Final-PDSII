@@ -1,4 +1,4 @@
-#include "JodoDaVelha.hpp"
+#include "JogoDaVelha.hpp"
 #include <iostream>
 
 JogoDaVelha::JogoDaVelha() : Tabuleiro(3, 3) {}

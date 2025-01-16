@@ -5,7 +5,6 @@
 #include "jogador.hpp"
 #include <vector>
 #include <utility>
-
 class Othello {
 private:
     Tabuleiro tabuleiro;

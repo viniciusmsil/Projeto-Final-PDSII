@@ -43,6 +43,18 @@ bool JogoDaVelha::verificarEmpate() const {
     return true; 
 }
 
+void JogoDaVelha::verificarVencedor() const {
+    if (verificarVitoria('X')) {
+    std::cout << "O jogador X venceu!\n";
+  } else if (verificarVitoria('O')) {
+    std::cout << "O jogador O venceu!\n";
+  } else if (verificarEmpate()) {
+    std::cout << "O jogo terminou empatado!\n";
+  } else {
+    std::cout << "O jogo ainda não acabou.\n";
+  }
+}
+
 void JogoDaVelha::exibirTabuleiro() const {
         for (int i = 0; i < 3; ++i) {
             for (int j = 0; j < 3; ++j) {

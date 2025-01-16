@@ -26,5 +26,4 @@ public:
     void exibirJogadorAtual() const;
     void verificarVencedor() const;
 };
-
 #endif

@@ -17,6 +17,8 @@ public:
     bool verificarVitoria(char jogador) const;
 
     bool verificarEmpate() const;
+
+    void verificarVencedor() const;
 };
 
 #endif 

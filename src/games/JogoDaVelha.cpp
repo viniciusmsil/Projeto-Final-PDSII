@@ -1,4 +1,5 @@
 #include "JogoDaVelha.hpp"
+#include "jogador.hpp"
 #include <iostream>
 
 JogoDaVelha::JogoDaVelha() : Tabuleiro(3, 3) {}
@@ -44,15 +45,13 @@ bool JogoDaVelha::verificarEmpate() const {
 }
 
 void JogoDaVelha::verificarVencedor() const {
-    if (verificarVitoria('X')) {
-    std::cout << "O jogador X venceu!\n";
-  } else if (verificarVitoria('O')) {
-    std::cout << "O jogador O venceu!\n";
-  } else if (verificarEmpate()) {
-    std::cout << "O jogo terminou empatado!\n";
-  } else {
-    std::cout << "O jogo ainda não acabou.\n";
-  }
+    if (verificarVitoria('x')) {  // Usando jogador1
+        std::cout << jogador1.getApelido() << " (X) venceu!\n";  // Usando getApelido
+    } else if (verificarVitoria('O')) {  // Usando jogador2
+        std::cout << jogador2.getApelido() << " (O) venceu!\n";  // Usando getApelido
+    } else if (verificarEmpate()) {
+        std::cout << "O jogo terminou empatado!\n";
+    } 
 }
 
 void JogoDaVelha::exibirTabuleiro() const {

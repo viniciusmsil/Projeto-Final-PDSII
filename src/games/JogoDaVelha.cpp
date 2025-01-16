@@ -14,14 +14,14 @@ bool JogoDaVelha::fazerJogada(int linha, int coluna, char jogador) {
 
 bool JodoDaVelha::verificarVitoria(string jogador) const {
     for (int i = 0; i < 3; ++i) {
-        //linhas
+        // Confere linhas
         if (tabuleiro[i][0] == jogador && tabuleiro[i][1] == jogador && tabuleiro[i][2] == jogador)
             return true;
-        //Colunas
+        //Confere Colunas
         if (tabuleiro[0][i] == jogador && tabuleiro[1][i] == jogador && tabuleiro[2][i] == jogador)
             return true;
     }
-        //Diagonais
+        //Confere Diagonais
         if (tabuleiro[0][0] == jogador && tabuleiro[1][1] == jogador && tabuleiro[2][2] == jogador) ||
            (tabuleiro[0][2] == jogador && tabuleiro[1][1] == jogador && tabuleiro[2][0] == jogador); {
             return true;
@@ -45,10 +45,10 @@ bool JogoDaVelha::verificarEmpate() const {
 }
 
 void JogoDaVelha::verificarVencedor() const {
-    if (verificarVitoria('x')) {  // Usando jogador1
-        std::cout << jogador1.getApelido() << " (X) venceu!\n";  // Usando getApelido
-    } else if (verificarVitoria('O')) {  // Usando jogador2
-        std::cout << jogador2.getApelido() << " (O) venceu!\n";  // Usando getApelido
+    if (verificarVitoria('x')) {  //Verifica Vitoria jogador 1
+        std::cout << jogador1.getApelido() << " (X) venceu!\n";  
+    } else if (verificarVitoria('O')) {  //Verifica Vitoria jogador 2
+        std::cout << jogador2.getApelido() << " (O) venceu!\n";  
     } else if (verificarEmpate()) {
         std::cout << "O jogo terminou empatado!\n";
     } 
